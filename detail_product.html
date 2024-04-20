@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Transaction Product</title>
+
+    <!-- icon-website -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+
+    <link href="./c_details.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="./style.css" rel="stylesheet">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <!-- Icon Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="main-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home"><img src="./img/logo-nav.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Tautan di bagian tengah -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav text-uppercase ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./project.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./list_consult.html">Consultation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./list_product.html"
+                            style="color: #b35667; font-weight: bold;">Product</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#search"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 12 12">
+                                <path fill="currentColor"
+                                    d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1M2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0" />
+                            </svg></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle-transparant" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="-5 -7 24 24">
+                                <path fill="currentColor"
+                                    d="M1 0h5a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2m7 8h5a1 1 0 0 1 0 2H8a1 1 0 1 1 0-2M1 4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end text-end">
+                            <li><a class="dropdown-item d-flex align-items-center fw-bold" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="me-auto">
+                                        <g fill="none" stroke="#E9A2B0" stroke-width="2">
+                                            <path stroke-linejoin="round"
+                                                d="M4 18a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" />
+                                            <circle cx="12" cy="7" r="3" />
+                                        </g>
+                                    </svg>PROFILE</a>
+                            </li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item d-flex justify-content-end fw-bold"
+                                    href="./transaction.html"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" class="me-auto">
+                                        <path fill="#E9A2B0" fill-rule="evenodd"
+                                            d="M8.418 3.25c.28-.59.884-1 1.582-1h4c.698 0 1.301.41 1.582 1c.683.006 1.216.037 1.692.223a3.25 3.25 0 0 1 1.426 1.09c.367.494.54 1.127.776 1.998l.742 2.722l.28.841l.024.03c.901 1.154.472 2.87-.386 6.301c-.546 2.183-.818 3.274-1.632 3.91c-.814.635-1.939.635-4.189.635h-4.63c-2.25 0-3.375 0-4.189-.635c-.814-.636-1.087-1.727-1.632-3.91c-.858-3.431-1.287-5.147-.386-6.301l.024-.03l.28-.841l.742-2.722c.237-.871.41-1.505.776-1.999a3.25 3.25 0 0 1 1.426-1.089c.476-.186 1.008-.217 1.692-.222m.002 1.502c-.662.007-.928.032-1.148.118a1.75 1.75 0 0 0-.768.587c-.176.237-.28.568-.57 1.635l-.57 2.089C6.384 9 7.778 9 9.684 9h4.631c1.907 0 3.3 0 4.32.18l-.569-2.089c-.29-1.067-.394-1.398-.57-1.635a1.75 1.75 0 0 0-.768-.587c-.22-.086-.486-.111-1.148-.118A1.75 1.75 0 0 1 14 5.75h-4a1.75 1.75 0 0 1-1.58-.998"
+                                            clip-rule="evenodd" />
+                                    </svg>MY CART</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item d-flex justify-content-end fw-bold"
+                                    href="./chat_consult.html"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" class="me-auto">
+                                        <path fill="#E9A2B0"
+                                            d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89l.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7s-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0 0 13 21a9 9 0 0 0 0-18m-1 5v5l4.28 2.54l.72-1.21l-3.5-2.08V8z" />
+                                    </svg>HISTORY</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item d-flex justify-content-end fw-bold" href="./list_article.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"
+                                        class="me-auto">
+                                        <path fill="#E9A2B0"
+                                            d="M88 112a8 8 0 0 1 8-8h80a8 8 0 0 1 0 16H96a8 8 0 0 1-8-8m8 40h80a8 8 0 0 0 0-16H96a8 8 0 0 0 0 16m136-88v120a24 24 0 0 1-24 24H32a24 24 0 0 1-24-23.89V88a8 8 0 0 1 16 0v96a8 8 0 0 0 16 0V64a16 16 0 0 1 16-16h160a16 16 0 0 1 16 16m-16 0H56v120a23.84 23.84 0 0 1-1.37 8H208a8 8 0 0 0 8-8Z" />
+                                    </svg>ARTICLE</a></li>
+                            <li>
+                                <div class="dropdown-divider"></div>
+                            </li>
+                            <li><a class="dropdown-item d-flex justify-content-end fw-bold" href="./index.html"
+                                    style="color: #FF0002;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        class="me-auto">
+                                        <path fill="#ff0002"
+                                            d="m17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5M4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4z" />
+                                    </svg>LOG OUT</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="detail_product" class="bg-light ">
+        <div class="container pb-32 pt-16">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card rounded-8 ">
+                        <div>
+                            <div class="c_details-frame">
+                                <div class="c_details-frame01">
+                                    <div class="col-md-4">
+                                        <div class="c_details-frame02">
+                                            <div class="c_details-frame03">
+                                                <div class="c_details-frame04">
+                                                    <img src="./assets/6f9434627cd4cfe398c59b3e36d6d8c3.png"
+                                                        alt="rectangle" width="75" height="75"
+                                                        class="c_details-rectangle" />
+                                                </div>
+                                                <div class="c_details-frame05">
+                                                    <img src="./assets/19451fb4be656ad55c6aafb9639d12b0.png"
+                                                        alt="rectangle" width="75" height="75"
+                                                        class="c_details-rectangle1" />
+                                                </div>
+                                                <div class="c_details-frame06">
+                                                    <img src="./assets/70acec4096ed6a3566331d3dc3538b34.png"
+                                                        alt="rectangle" width="75" height="75"
+                                                        class="c_details-rectangle2" />
+                                                </div>
+                                                <div class="c_details-frame07">
+                                                    <img src="./assets/c800d279746a15060e112759002c2ee3.png"
+                                                        alt="rectangle" width="75" height="75"
+                                                        class="c_details-rectangle3" />
+                                                </div>
+                                                <div class="c_details-frame08">
+                                                    <img src="./assets/2d82d503972bd688bd63e5b1cb84224c.png"
+                                                        alt="rectangle" width="75" height="75"
+                                                        class="c_details-rectangle4" />
+                                                </div>
+                                            </div>
+                                            <div class="c_details-frame09">
+                                                <img src="./assets/11cdf0719f99c565805c7a41c8903ea2.png" alt="rectangle"
+                                                    width="385" height="385" class="c_details-rectangle5" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-8 ">
+                                        <div class="c_details-frame10 ">
+                                            <div class="c_details-frame11">
+                                                <div class="c_details-frame12">
+                                                    <div class="c_details-text">
+                                                        <p class="c_details-text01">Dior Addict Lip Tint</p>
+                                                    </div>
+                                                </div>
+                                                <div class="c_details-frame13">
+                                                    <img src="./assets/29b8c2a30ce30f8cfe03fae6e3d5f99d.svg" alt="frame"
+                                                        width="20" height="20" class="c_details-frame14" />
+                                                    <img src="./assets/0633d19e66d63dba5ccb4a0f52a34a1e.svg" alt="frame"
+                                                        width="20" height="20" class="c_details-frame15" />
+                                                    <img src="./assets/b4c9d68da963fd92b8fb810844b51e08.svg" alt="frame"
+                                                        width="20" height="20" class="c_details-frame16" />
+                                                    <img src="./assets/1a0f9ed0e8919e993799c03e233ef10b.svg" alt="frame"
+                                                        width="20" height="20" class="c_details-frame17" />
+                                                    <img src="./assets/97ec60321599d54e3fb89f78e09f6b2c.svg" alt="frame"
+                                                        width="20" height="20" class="c_details-frame18" />
+                                                    <div class="c_details-text02">
+                                                        <p class="c_details-text03">281 Reviews</p>
+                                                    </div>
+                                                </div>
+                                                <div class="c_details-frame19">
+                                                    <div class="c_details-text04">
+                                                        <p class="c_details-text05">IDR 635.000,00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c_details-instance">
+                                                <div class="c_details-frame20">
+                                                    <div class="c_details-frame22">
+                                                        <img src="./assets/6a345175cd98e7951d312cee97fedd49.svg"
+                                                            alt="ellipse" width="20" height="20"
+                                                            class="c_details-ellipse" />
+                                                        <div class="c_details-text06">
+                                                            <p class="c_details-text07">421 Natural Tea</p>
+                                                        </div>
+                                                        <img src="./assets/29d2929df6587039eda1f77f4cc2e759.svg"
+                                                            alt="frame" width="30" height="30"
+                                                            class="c_details-frame23" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c_details-frame28">
+                                                <div class="c_details-text10">
+                                                    <p class="c_details-text11">Description</p>
+                                                </div>
+                                                <div class="c_details-text12">
+                                                    <p class="c_details-text13">
+                                                        Dior Addict Lip Tint is the first no-transfer Dior lip tint with
+                                                        12h wear, that highlights the lips with a bold color in a
+                                                        semi-matte finish and fuses with the skin for a bare-lip
+                                                        sensation. Composed with 95%
+                                                        natural-origin ingredients, Dior Addict Lip Tint is infused with
+                                                        Cherry Oil to hydrate lips for 24h and thereby provide
+                                                        long-lasting comfort. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="c_details-frame29">
+                                                <div class="c_details-instance1">
+                                                    <div class="c_details-frame30">
+                                                        <img src="./assets/b26f6aa5ea1e203577ee22f8113ae7ad.svg"
+                                                            alt="frame" width="50" height="20"
+                                                            class="c_details-frame31" />
+                                                    </div>
+                                                    <div class="c_details-frame32">
+                                                        <div class="c_details-text14">
+                                                            <p class="c_details-text15">1</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_details-frame33">
+                                                        <img src="./assets/23c6d6d710db235986adb735f73b39df.svg"
+                                                            alt="frame" width="50" height="20"
+                                                            class="c_details-frame34" />
+                                                    </div>
+                                                </div>
+                                                <a class="btn fw-bold" href="./transaction.html" role="button"
+                                                    style="color: #000; background-color:#FFD8E6 ; width: 294px;">Add To
+                                                    Cart</a>
+                                                <a class="btn fw-bold" href="#" role="button"
+                                                    style="color: #000; background-color:#E9A2B0 ; width: 294px;">VIEW
+                                                    MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c_details-frame35">
+                                    <div class="c_details-frame36">
+                                        <div class="c_details-frame37">
+                                            <div class="c_details-text20">
+                                                <p class="c_details-text21">Review</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c_details-frame38">
+                                        <div class="c_details-frame39">
+                                            <div class="c_details-text22">
+                                                <p class="c_details-text23">Most helpfull positive review</p>
+                                            </div>
+                                            <div class="c_details-frame40">
+                                                <img src="./assets/a0d1633b5d650c01930160cb41882376.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame41" />
+                                                <img src="./assets/30c84bf22db4d619a9a1fb4a4edf027f.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame42" />
+                                                <img src="./assets/e3af45d3f872c80815d9060829e100d8.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame43" />
+                                                <img src="./assets/64ca766660490dcc5d5db0a149b688b4.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame44" />
+                                                <img src="./assets/c8b22a1c3e92a00867c4d0af1c14d39c.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame45" />
+                                            </div>
+                                            <div class="c_details-text24">
+                                                <p class="c_details-text25">The goods are good and guaranteed and
+                                                    the delivery is fast</p>
+                                            </div>
+                                        </div>
+                                        <div class="c_details-frame46">
+                                            <div class="c_details-text26">
+                                                <p class="c_details-text27">Most helpfull positive review</p>
+                                            </div>
+                                            <div class="c_details-frame47">
+                                                <img src="./assets/491b3886a023c24c28b33335acdda53a.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame48" />
+                                                <img src="./assets/f39af8e88d45663b8989cd6665d34b91.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame49" />
+                                                <img src="./assets/3161fd4fd9150fe17b5c5af661bfea77.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame50" />
+                                                <img src="./assets/43263ceaa5858a279bb1eb03d0c69d26.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame51" />
+                                                <img src="./assets/e5568db96cfbc4ddfca9678b4f8bc2fc.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame52" />
+                                            </div>
+                                            <div class="c_details-text28">
+                                                <p class="c_details-text29">The goods are good and guaranteed and
+                                                    the delivery is fast</p>
+                                            </div>
+                                        </div>
+                                        <div class="c_details-frame53">
+                                            <div class="c_details-text30">
+                                                <p class="c_details-text31">Most helpfull positive review</p>
+                                            </div>
+                                            <div class="c_details-frame54">
+                                                <img src="./assets/d374ca0133df48889a04df93967f6b27.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame55" />
+                                                <img src="./assets/1334c30feaef23ba325e6c4b76a0dc3e.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame56" />
+                                                <img src="./assets/437542e2e08a546102926387d5671d4c.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame57" />
+                                                <img src="./assets/fa377cea7de0dd4137f7a30cb50022c2.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame58" />
+                                                <img src="./assets/4e0429c4af41e9234d3d6b0554f2feae.svg" alt="frame"
+                                                    width="24" height="24" class="c_details-frame59" />
+                                            </div>
+                                            <div class="c_details-text32">
+                                                <p class="c_details-text33">The goods are good and guaranteed and
+                                                    the delivery is fast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary" style="background-color: #E9A2B0;">
+        <!-- Section: Links  -->
+        <section class="footer">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 mx-auto mb-4 pt-16 border-end">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <img src="./img/logo.png" alt="logo">
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 mx-auto mb-4 border-end">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Site Map
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset" style="text-decoration: none;">Home</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset" style="text-decoration: none;">Consultation</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset" style="text-decoration: none;">Store</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset" style="text-decoration: none;">Article</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset" style="text-decoration: none;">About Us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset" style="text-decoration: none;">Privacy & Policy</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 mx-auto mb-md-0 mb-4 pt-12">
+                        <!-- Links -->
+                        <h5 class="text-uppercase fw-bold mb-4 text-center">Contact Us</h5>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="me-3 fs-5"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                    viewBox="0 0 24 24">
+                                    <path fill="black"
+                                        d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
+                                </svg></a>
+                            <a href="#" class="me-3 fs-5"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                    viewBox="0 0 24 24">
+                                    <path fill="black"
+                                        d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                                </svg></a>
+                            <a href="#" class="me-3 fs-5"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                    viewBox="0 0 24 24">
+                                    <path fill="black"
+                                        d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z" />
+                                </svg></a>
+                            <a href="#" class="me-3 fs-5"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                    viewBox="0 0 24 24">
+                                    <path fill="black"
+                                        d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 5l-8-5zm0 12H4V8l8 5l8-5z" />
+                                </svg></a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 fw-bold border-top" style="background-color: #E9A2B0;">
+            COPYRIGHT © 2024 Nawasena. Made with ❤️ by Nawasena Team
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
